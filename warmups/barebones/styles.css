@@ -1,0 +1,16 @@
+h2 {
+    font-family: cursive;
+    color:aqua;
+    text-align: center;
+    background-color: fuchsia;
+}
+
+p {
+    font-family: cursive;
+    color: aqua;
+    text-align: center;
+    background-color: fuchsia;
+}
+#day2 {
+    font-size: 25px;
+}

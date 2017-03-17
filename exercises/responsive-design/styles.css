@@ -1,0 +1,38 @@
+.container {
+    background-image: url("./img/jaclyn-clark-115838.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+body {
+    color: white;
+}
+
+.social {
+    height: 30px;
+}
+
+.desktop-view {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.banner {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+@media screen and (max-width: 875px) {
+    div.desktop-view ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    nav.mobile.view {
+        display: block;
+    }
+}

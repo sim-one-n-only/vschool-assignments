@@ -1,0 +1,154 @@
+@font-face {
+font-family: 'Super Mario Bros.';
+font-style: normal;
+font-weight: normal;
+src: local('Super Mario Bros..ttf'), url('Super Mario Bros..woff') format('truetype');
+}
+
+
+img {
+    width:200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+    height: 500px;
+    width: 420px;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    font-size:100px;
+    margin-right: 40px;
+    font-family: 'Super Mario Bros.';
+    margin-top: 500px;
+    background-color: red;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    color: red;
+    font-family: "Super Mario Bros.";
+    background-color: yellow;
+    margin-left: 800px;
+    margin-right: 800px
+    
+}
+
+body {
+    background-image: url('https://images7.alphacoders.com/330/330724.jpg');
+    background-size: cover;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+    font-family: "Super Mario Bros.", sans;
+    font-size: 60px;
+    font-style: italic;
+}
+
+#goomba {
+    display: inline-block;
+}
+
+#bobomb {
+    display: inline-block;
+}
+
+#cheep {
+    display: inline-block;
+}
+
+#total {
+    display: inline-block;
+    text-align: center;
+}
+
+.baddie {
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Super Mario Bros.';
+    margin-left: 100px;
+}
+
+li {
+    text-align: ;
+    font-family: fantasy;
+    font-size: 20px;
+    display: inline-block;
+}
+
+legend {
+    margin-right: auto;
+    margin-top: 40px;
+    font-family: Arial Black;
+    text-transform:uppercase;
+    font-size: 20px;
+} 
+
+.costHeading {
+    color: red;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+input {
+    width: 50px
+}
+
+#coin {
+    width: 100px;
+}
+
+#amount {
+    margin-bottom: 91px;
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: 'Super Mario Bros.';
+    color: black;
+}
+
+
+.totes {
+    text-align: center;
+    font-family: 'Super Mario Bros.';
+    padding-top: 30px;
+    font-size: 40px
+}
+
+p {
+    display: inline;
+    padding-left: 15px;
+}
+
+#totalButton {
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+#totalCost {
+    padding-right: 10px;
+    font-family: 'Super Mario Bros.';
+    font-size: 40px;
+    
+}
+
+footer {
+    text-align: center;
+}

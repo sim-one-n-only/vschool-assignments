@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Mario Pest Control</Title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="body">
+        <h1>Mario Pest Control Ltd</h1>
+        <h4>Your pest control expert!</h4>
+        <h2>INVOICE:</h2>
+        <div id="goomba">
+            <ul>
+                <img src="http://vignette4.wikia.nocookie.net/fanon/images/d/dd/Grand_Goomba.png/revision/latest?cb=20120731043941">
+                <li class="baddie">Goombas</li>
+                <legend class="costHeading">Total Cost for Goombas</legend>
+                <li>Cost per Goomba:</li>
+                <li id="costGoombas">5</li>
+                <br>
+                <li>Goombas Caught:</li>
+                <input type="number" id="caughtGoombas">
+                <button id="button1" type="submit">Total</button>
+                <br>
+                <li class="totes">Total:
+                    <p id="totalGoomba"></p>
+                </li>
+
+
+            </ul>
+        </div>
+        <div id="bobomb">
+            <ul>
+                <img src="http://vignette3.wikia.nocookie.net/nintendo/images/8/86/Bob-omb_(MKWii).png/revision/latest?cb=20120819225302&path-prefix=en">
+                <li class="baddie">Bob-ombs</li>
+                <li>
+                    <legend class="costHeading">Total Cost for Bob-ombs</legend>
+                    <li>Cost per Bob-omb:</li>
+                    <li id="costBobombs">7</li>
+                    <br>
+                    <li>Bob-ombs Caught:</li>
+                    <input type="number" id="caughtBobombs">
+                    <button id="button2" type="submit">Total</button>
+                    <br>
+                    <li class="totes">Total:
+                        <p id="totalBobomb"></p>
+                    </li>
+
+            </ul>
+        </div>
+        <div id="cheep">
+            <ul>
+                <img src="http://vignette2.wikia.nocookie.net/fantendo/images/4/46/Cheep-Cheep_cool.png/revision/latest?cb=20111118123743">
+                <li class="baddie">Cheep-Cheeps</li>
+                <li>
+                    <legend class="costHeading">Total Cost for Cheep-Cheeps</legend>
+                    <li>Cost per Cheep-Cheep:</li>
+                    <li id="costCheeps">11</li>
+                    <br>
+                    <li>Cheep-Cheeps Caught:</li>
+                    <input type="number" id="caughtCheeps">
+                    <button id="button3" type="submit">Total</button>
+                    <br>
+                    <li class="totes">Total:
+                        <p id="totalCheep"></p>
+                    </li>
+
+            </ul>
+        </div>
+        <div id="total">
+            <img id="coin" src="http://vignette4.wikia.nocookie.net/mario/images/c/c8/Golden_Coin_(New_Super_Mario_Bros.).png/revision/latest?cb=20110313000322">
+            <ul>
+                <li>
+                    <legend id="amount">Amount Due:</legend>
+                    <button id="totalButton" type="submit">Total Cost</button>
+                    <br>
+                    <p id="totalCosts" class="totes">Total: </p>
+                    <p id="totalCost"></p>
+            </ul>
+        </div>
+        <div id=nightTime>
+            <button id="nightMode" type="submit">Night Mode</button>
+        </div>
+
+        <footer>
+            www.mario_pest_control.com
+            <br> Contact Us: mario_pest_control@nintendo.com 1010 Address Lane, Brooklyn NY, 66786
+
+        </footer>
+        <audio id="coinSound">
+            <source src="Mario-coin-sound.mp3" type="audio/mp3">
+        </audio>
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>

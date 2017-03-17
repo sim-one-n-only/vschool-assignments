@@ -1,0 +1,24 @@
+.styling {
+    font-family: monospace;
+    border: 2px solid grey;
+    
+}
+
+h1 {
+    font-family: Impact;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: azure;
+}
+
+tr {
+    border: 5px dotted grey;
+}
+
+td {
+    padding: 20px;
+    text-align: center
+    
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <div class="row">
+            <div class="col-3">Date</div>
+            <div class="col-3">
+                Check In:<input type="date" name="check-in">
+            </div>
+            <div class="col-3">
+                Check Out:<input type="date" name="check-out">
+            </div>
+            <div class="col-3">
+                <select>
+                    <option value="1">Guest 1</option>
+                    <option value="2">Guest 2</option>
+                    <option value="3">Guest 3</option>
+                    <option value="4">Guest 4</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    Room Types
+                </div>
+                <div class="col-3">
+                    Entire HOme<input type="checkbox" name="room-type" value="Entire Home">
+                </div>
+                <div class="col-3">
+                    Private Room<input type="checkbox" name="room-type" value="Private Room">
+                </div>
+                <div class="col-3">
+                    Shared Room<input type="checkbox" name="room-type" value="Shared Room">
+                </div>
+            </div>
+            <div class="row"></div>
+                <div class="col-3">
+                    <b>Price Range</b>
+                    </div>
+                <div class="col-3">
+                    <input type="range" min="0" max="1000">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+h2 { 
+    color:darkgreen;
+}
+#headings {
+    font-family: Georgia;
+    text-align: center;
+}
+p {
+    line-height: 25px;
+}
+a {
+    text-decoration: none;
+    
+}
+a:hover {
+    text-decoration: underline;
+}
+#like {
+    text-transform: uppercase;
+}
+img {
+    float: left;
+    margin-right: 15px;
+}

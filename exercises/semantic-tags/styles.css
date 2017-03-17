@@ -1,0 +1,65 @@
+.navigation {
+    display: block;
+    width: 170px;
+    height: 290px;
+    background-color:lightcoral;
+    font-size: 20px;
+    float: left;
+}
+
+#navBar a {
+    display:block;
+    color: #000;
+    padding: 15px 20px;
+    border: solid;
+    margin: 10px;
+    text-decoration: bold;
+}
+.parent-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+#Boh {
+    width:400px;
+    height: 400px;
+    border: 10px inset lightgray;
+}
+
+#Cash {
+    width: 400px;
+    height: 400px;
+    border: 10px inset lightgray;
+    margin-bottom: 30px;
+}
+
+.headings h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: goldenrod;
+}
+
+.headings h3 {
+    font-family: 'Pacifico', cursive ;
+    font-size: 40px;
+    color: coral;
+    text-align: center;
+}
+
+body {
+    background-image:url(https://thumbs.dreamstime.com/z/classic-camera-grunge-background-20967569.jpg);
+    
+}
+
+.footer {
+    
+   
+}
+<style>
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Russo+One');
+</style>

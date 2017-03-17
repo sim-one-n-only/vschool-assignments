@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Sanchez');
+h1 {
+    font-family: Impact, Charcoal, sans-serif;
+    text-align: center;
+    font-size:70px;
+    display: inline;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+h2 {
+    font-family: Arvo, serif;
+    text-align: center;
+    font-size: 40px;
+}
+p {
+    font-family: Sanchez, sans-serif;
+    text-align: justify;
+    column-count: 3;
+    display:inline-block;
+    column-gap: 20px;
+    font-size: 25px;
+}
+.Cash {
+    width: 150px;
+    float: left;
+    padding-right: 10px;
+}
+.paw {
+    width: 130px;
+    vertical-align: middle
+}
+#mid {
+    width: 200px;
+    height: 120px;
+    padding-top: 10px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+div {
+    border-color: black;
+    border-style: double;
+    border-bottom-width: thick;
+    align-content: center;
+    
+}
+#right {
+   -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    align-content: right;
+}
+#left {
+    padding-left: 40px;
+    align-content: left;
+}
+body {
+    background-image: url(http://wallpapercave.com/wp/aVMEQR0.jpg)
+}

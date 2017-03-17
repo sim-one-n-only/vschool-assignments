@@ -1,0 +1,96 @@
+{
+    "appetizers": [
+        {
+            "name": "wings",
+            "types": ["mild", "hot", "bbq", "thai chile"],
+            "dip": ["blue cheese", "ranch"],
+            "sides": ["celery", "carrots"]
+            },
+        {
+            "name": "shrimp",
+            "types": ["mild", "hot", "coconut", "jumbo"],
+            "dip": ["coctail", "tartar", "remoulad"],
+            "sides": "none"
+            },
+        {
+            "name": "fries",
+            "types": ["plain", "bacon ranch", "poutine"],
+            "dip": ["ranch", "sour cream", "ketchup", "fry sauce"],
+            "sides": "none"
+            }
+    ],
+    "cold sandwhiches": [
+        {
+            "name": "turkey club",
+            "toppings": ["mayo", "mustard", "bacon", "lettuce", "tomato", "pickles"],
+            "cheese": ["american", "provolone", "swiss", "cheddar"],
+            "sides": ["fries", "plain chips", "bbq chips", "baked chips"]
+            },
+        {
+            "name": "ham and cheese club",
+            "toppings": ["mayo", "mustard", "bacon", "lettuce", "tomato", "pickles"],
+            "cheese": ["american", "provolone", "swiss", "cheddar"],
+            "sides": ["fries", "plain chips", "bbq chips", "baked chips"]
+            },
+        {
+            "name": "chicken salad club",
+            "toppings": ["mayo", "mustard", "bacon", "lettuce", "tomato", "pickles"],
+            "cheese": ["american", "provolone", "swiss", "cheddar"],
+            "sides": ["fries", "plain chips", "bbq chips", "baked chips"]
+            }
+    ],
+    "hot sandwhiches": [
+        {
+            "name": "grilled chicken club",
+            "toppings": ["mayo", "mustard", "bacon", "lettuce", "tomato", "pickles"],
+            "cheese": ["american", "provolone", "swiss", "cheddar"],
+            "sides": ["fries", "plain chips", "bbq chips", "baked chips"]
+            },
+        {
+            "name": "crispy chicken club",
+            "toppings": ["mayo", "mustard", "bacon", "lettuce", "tomato", "pickles"],
+            "cheese": ["american", "provolone", "swiss", "cheddar"],
+            "sides": ["fries", "plain chips", "bbq chips", "baked chips"]
+            },
+        {
+            "name": "bacon cheeseburger",
+            "toppings": ["mayo", "mustard", "bacon", "lettuce", "tomato", "pickles"],
+            "cheese": ["american", "provolone", "swiss", "cheddar"],
+            "sides": ["fries", "plain chips", "bbq chips", "baked chips"]
+            }
+        ],
+
+    "deserts": [
+        {
+            "name": "cheesecake",
+            "types": ["strawberry", "peanut-butter cups", "oreo", "chocolate"],
+            "toppings": ["chocolate sauce", "caramel", "strawberries", "whipped cream"],
+            "servings": ["single", "double"]
+            },
+        {
+            "name": "brownie sundae",
+            "types": ["chocolate", "vanilla", "strawberry"],
+            "toppings": ["fudge", "caramel"]
+            }
+    ],
+    "drinks": [
+        {
+            "name": "ruby relaxer",
+            "ingredients": ["fresh strawberries", "simple syrup", "vodka", "coconut rum", "peach schnapps", "margarita mix"],
+            "garnish": ["orange wheel", "strawberry"],
+            "alcoholic": true
+                },
+        {
+            "name": "margarita",
+            "ingredients": ["tequila", "triple sec", "fresh lime juice", "margarita mix"],
+            "garnish": ["lime wedge", "salt rim"],
+            "alcoholic": true
+                },
+        {
+            "name": "strawberry lemonade",
+            "ingredients": ["fresh strawberries", "simple syrup", "strawberry syrup", "lemonade"],
+            "garnish": ["strawberry", "lemon wheel", "mint sprig"],
+            "alcoholic": false
+            }
+            ]
+}
