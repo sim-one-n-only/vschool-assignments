@@ -1,0 +1,109 @@
+body {
+    background: -webkit-linear-gradient(rgb(136, 199, 201) 58%, rgb(202, 232, 235) 100%);
+    background: -o-linear-gradient(rgb(136, 199, 201) 58%, rgb(202, 232, 235) 100%);
+    background: linear-gradient(rgb(136, 199, 201) 58%, rgb(202, 232, 235) 100%);
+    padding: 3%;
+    height: 94%;
+}
+
+.paper {
+    font: normal 12px/1.5 "Lucida Grande", arial, sans-serif;
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 6px 5px 4px 42px;
+    position: relative;
+    color: #444;
+    line-height: 20px;
+    border: 1px solid #d2d2d2;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+    background: -webkit-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -moz-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -o-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    -webkit-background-size: 100% 20px;
+    -moz-background-size: 100% 20px;
+    -ms-background-size: 100% 20px;
+    -o-background-size: 100% 20px;
+    background-size: 100% 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    width: 816px;
+    height: 1056px;
+}
+
+.paper::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #efe4e4;
+}
+
+textarea {
+    display: inline-block;
+    width: 94%;
+    margin: 0 auto;
+    padding: 3.8% 3%;
+    border: none;
+    outline: none;
+    height: 94%;
+    background: transparent;
+    line-height: 20px;
+}
+
+h1 {
+    background-color: #FFF;
+    padding: 80px;
+    text-align: center;
+    font-size: 60px;
+}
+
+#input {
+    margin-left: 35%;
+    font-size: 20px;
+    display: inline-block;
+}
+
+ul {
+    font-size: 30px;
+    list-style-type: none;
+    display: inline-grid;
+    width: 50%;
+    float: left;
+}
+
+#addBtn {
+    color: blue;
+    font-size: 15px;
+    vertical-align: text-bottom;
+}
+
+#button {
+    vertical-align: middle;
+}
+
+#pen {
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 10%;
+    right: 0%;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+    overflow: auto;
+    float: right;
+    display: static;
+    position: absolute;
+}

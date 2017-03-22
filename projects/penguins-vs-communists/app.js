@@ -2,7 +2,7 @@ var firstParty = new Parties("Penguins");
 var secondParty = new Parties("Communists");
 var whichParty;
 var onHit = function (party) {
-    var randoNum = randomNumber(5, 10);
+    var randoNum = randomNumber(50000, 100000);
     console.log(party.party + " took a hit! Population is now " + party.population);
     return party.population -= randoNum;
 }

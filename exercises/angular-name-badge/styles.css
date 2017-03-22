@@ -1,0 +1,22 @@
+#tellUs {
+    height: 200px;
+    border: 1px solid gray;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+form {
+    border: 3px solid black;
+    padding: 5%;
+    margin-bottom: 5%;
+    border-radius: 1%;
+}
+
+p {
+    padding: 5%;
+}
+
+#about {
+    border: 1px solid gray;
+    border-radius: 1%;
+}
