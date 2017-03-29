@@ -1,0 +1,64 @@
+.banner {
+    background-color: black;
+    background-image: url(http://more-sky.com/data/out/9/IMG_367472.png);
+    height: 600px;
+    width: 100%;
+    background-size: 50%;
+}
+
+.inputs {
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+    border: 3px ridge red;
+    background-color: silver;
+}
+
+#input {
+    width: 50%;
+    height: 5%;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 2%;
+}
+
+#button {
+    width: 30%;
+    margin-bottom: 2%;
+    color: silver;
+}
+
+.list {
+    display: inline-block;
+    width: 25%;
+    height: 20%;
+    border: 3px ridge red;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    padding-bottom: 4%;
+}
+
+h2 {
+    text-align: center;
+    font-family: Impact;
+    font-size: 340%;
+    color: red;
+    text-shadow: 0.1em 0.1em 0.1em #333;
+    letter-spacing: 30px;
+}
+
+h4 {
+    font-family: Impact;
+    font-size: 150%;
+}
+
+body {
+    background-color: silver;
+}

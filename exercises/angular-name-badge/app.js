@@ -1,7 +1,7 @@
 var app = angular.module('angularNameBadge', []);
 
 app.controller('mainCntrl', ['$scope', function ($scope) {
-    $scope.submit = function () {
+    $scope.submit = function (addName) {
         $scope.addName = {
             firstName: $scope.firstName,
             lastName: $scope.lastName,
@@ -13,7 +13,7 @@ app.controller('mainCntrl', ['$scope', function ($scope) {
         }
     }
 
-    //    $scope.firstName = 3;
+
 
 
 }])

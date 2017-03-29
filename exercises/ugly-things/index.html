@@ -9,10 +9,29 @@
 </head>
 
 <body ng-controller="mainCntrl">
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="app.js"></script>
+    <div class="row">
+        <div id="inputs" class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3">
+            <h3>Ugly Things</h3>
+            <input type="text" name="title" placeholder="Title" ng-model="newThing.title">
+            <input type="url" name="image" placeholder="img URL" ng-model="newThing.image">
+            <input type="text" name="description" placeholder="Description" ng-model="newThing.description">
+            <div class="col-md-4 col-md-offset-4">
+                <button id="submitButton" ng-click="submit(newThing)" ng-keyup="$event.keyCode === 13 && submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="uglyThings" class="col-md-2 col-md-offset-4" ng-repeat="item in uglyThings">
+            <p>{{item.title}}</p>
+            <img src="{{item.image}}">
+            <p>{{item.description}}</p>
+            <button ng-click="delete(item)">DELETE</button>
+            <button ng-click="addComment()">Add Comment</button>
+            <input ng-src="{{newComment}}">
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+        <script src="app.js"></script>
+    </div>
 </body>
 
 </html>

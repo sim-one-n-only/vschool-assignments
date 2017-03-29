@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="favJordans">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Favorite Jordans</title>
+</head>
+
+<body ng-controller="mainCntrl">
+    <div class="banner">
+        <div class="inputs">
+            <input id="input" ng-model="jordans" placeholder="Shoe Name">
+            <input id="input" ng-model="imgUrl" placeholder="Image URL">
+            <div>
+                <button id="button" ng-click="submit()">Submit</button>
+                <button id="button" ng-click="delete()">Remove</button>
+            </div>
+        </div>
+        <h2>FAVORITE JORDANS</h2>
+    </div>
+    <div class="list" display="flex" ng-repeat="shoe in shoes">
+        <h4>{{shoe.shoeName}}</h4>
+        <img ng-src="{{shoe.shoeImage}}">
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="service.js"></script>
+</body>
+
+</html>

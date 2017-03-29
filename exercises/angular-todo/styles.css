@@ -1,0 +1,36 @@
+.strike {
+    text-decoration: line-through;
+}
+
+.form {
+    text-align: center;
+    border: 3px double #B8B42D;
+    background-color: #FFFCE8;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+button {
+    width: 30%;
+    background-color: #3E363F;
+    color: #DD403A;
+}
+
+.inputs {
+    background-color: #BFADA3;
+    width: 40%;
+    text-align: center;
+    margin-top: 2%;
+    border: 3px double #B8B42D;
+    padding: 1%;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#typeText {
+    width: 80%;
+    height: 40%;
+    margin-bottom: 2%;
+}

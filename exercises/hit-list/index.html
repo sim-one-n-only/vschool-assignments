@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hitList">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hit List</title>
+</head>
+
+<body ng-controller="mainCntrl">
+    <div class="heading">
+        <h1>* Don Corleon's Hit List</h1>
+    </div>
+    <div class="empty"></div>
+    <div class="list" ng-repeat="item in hitList">
+        <p>{{item.name}}</p>
+        <img src="{{item.image}}">
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

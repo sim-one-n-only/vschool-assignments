@@ -6,6 +6,7 @@ $("#addBtn").click(function () {
     var deleteBtn = ("<button id='button'>X</button>");
     $("#list").append("<li id='listItem'>" + deleteBtn + "  " + item + "</li><br/>");
     $("#input").val("");
+    localStorage.setItem("list", JSON.stringify(shoppingList));
 
 })
 
@@ -19,5 +20,3 @@ $("#input").keypress(function (e) {
 $(document).on("click", "#button", function () {
     $(this).parent('li').remove();
 })
-
-localStorage.setItem("list", JSON.stringify(shoppingList));

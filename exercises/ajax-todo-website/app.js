@@ -6,13 +6,12 @@ $(".button").click(function () {
     $("#checkbox").is("checked")
     $.post("http://api.vschool.io/simone/todo/", newTodo, function (response) {
         console.log(response);
+        $("#todos").text(newTodo);
     })
+
+
 })
 
-$.post("http://api.vschool.io/simone/todo/"), newTodo,
-    function (newTodo) {
-        $("#todos").append()
-    }
 
 
 //Delete (Destroy)

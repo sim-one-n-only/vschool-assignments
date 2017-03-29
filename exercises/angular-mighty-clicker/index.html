@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mightyClicker">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mighty Clicker</title>
+</head>
+
+<body ng-controller="mainCntrl">
+    <button placeholder="red" ng-click="clickRed()">Red Clicker</button>
+    <p ng-model="redScore">Score: </p>
+    <button placeholder="blue" ng-click="clickBlue()">Blue Clicker</button>
+    <p ng-model="blueScore">Score: </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
