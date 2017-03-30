@@ -2,7 +2,7 @@ var app = angular.module('favJordans', []);
 
 app.controller("mainCntrl", ["$scope", "shoeService", function ($scope, shoeService) {
 
-    $scope.submit = function (addShoe) {
+    $scope.submit = function () {
         $scope.addShoe = {
             shoeName: $scope.jordans,
             shoeImage: $scope.imgUrl
@@ -13,9 +13,9 @@ app.controller("mainCntrl", ["$scope", "shoeService", function ($scope, shoeServ
 
 
         $scope.shoes = shoeService.addShoe($scope.addShoe);
+    }
 
-
-//        $scope.delete = shoeService.removeShoe($scope.addShoe);
-
+    $scope.delete = function () {
+        $scope.shoes = shoeService.removeShoe($scope.jordans);
     }
 }])

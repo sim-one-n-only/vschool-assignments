@@ -1,0 +1,57 @@
+body {
+    background-color: yellow
+}
+
+#redDiv {
+    text-align: right;
+}
+
+#blueDiv {
+    margin-left: 10%;
+    /*    text-align: right;*/
+}
+
+button {
+    margin-top: 5%;
+    font-family: Comic Sans;
+    font-size: 130%;
+}
+
+p {
+    font-family: Arial Black;
+    font-size: 200%;
+}
+
+#redPow {
+    width: 60%;
+}
+
+#boom {
+    float: left;
+}
+
+#pow {
+    width: 20%;
+    float: left;
+    margin-top: 3%
+}
+
+#blueRanger {
+    width: 68%;
+    padding-left: 10%
+}
+
+#redRanger {
+    padding-bottom: 5%;
+    padding-left: 15%
+}
+
+#blueButton {
+    margin-left: 55%;
+    margin-top: 3%;
+}
+
+#screen {
+    margin: 5%;
+    margin-left: 10%;
+}

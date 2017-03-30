@@ -11,10 +11,12 @@ app.service('shoeService', function () {
     }
 
 
-    this.removeShoe = function (shoe, index) {
-        var shoe = self.jordans[i];
-        self.jordans.splice(shoe, 1);
-        return self.jordans;
+    this.removeShoe = function (deleteShoe) {
+        for (var i = 0; i < self.jordans.length; i++) {
+            if (deleteShoe === self.jordans[i].shoeName) {
+                self.jordans.splice(i, 1);
+                return self.jordans;
+            }
+        }
     }
-
 })
