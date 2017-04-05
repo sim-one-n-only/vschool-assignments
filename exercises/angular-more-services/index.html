@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cartoonNetwork">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cartoon Network</title>
+</head>
+
+<body ng-controller="mainCntrl">
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron text-center">
+                <h2>Favorite Old School Cartoons</h2>
+                <img id="bannerImage1" src="http://vignette2.wikia.nocookie.net/cartoonnetwork/images/e/e9/CN_Logo_%282D%29.png/revision/latest?cb=20110923042645">
+                <div class="input-group input-group-lg ">
+                    <input class="form-control" placeholder="Title" type="text" ng-model="title">
+                    <input class="form-control" placeholder="Description" type="text" ng-model="description">
+                    <input class="form-control" placeholder="Image Url" type="imgUrl" ng-model="imgUrl">
+                </div>
+                <button class="btn btn-primary btn-lg" ng-click="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" ng-repeat="cartoon in cartoons">
+
+                <p>{{cartoon.title}}</p>
+                <p>{{cartoon.description}}</p>
+                <img class="img-responsive img-thumbnail" src="{{cartoon.image}}">
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="service.js"></script>
+
+</body>
+
+</html>

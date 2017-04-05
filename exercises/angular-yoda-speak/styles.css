@@ -1,0 +1,21 @@
+body {
+    background-image: url("https://www.onespot.com/wp-content/uploads/yoda.png");
+    background-size: cover;
+}
+
+div {
+    font-size: 80px;
+    color: white;
+    margin-top: 450px;
+    text-align: center;
+/*    border: 3px groove green;*/
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+}
+
+input {
+    font-size: 20px;
+}

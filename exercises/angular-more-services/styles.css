@@ -1,0 +1,20 @@
+.jumbotron {
+    background-color: black;
+    background-size: cover;
+    color: white;
+    padding: 5%;
+}
+
+.form-control {
+    text-align: center;
+}
+
+button {
+    margin-top: 2%;
+}
+
+#bannerImage1 {
+    width: 20%;
+    float: left;
+}
+

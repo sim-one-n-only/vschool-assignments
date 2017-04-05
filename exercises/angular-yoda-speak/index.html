@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="yodaSpeak">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Yoda Speak</title>
+</head>
+
+<body ng-controller="mainCntrl">
+    <h1>Yoda Speak</h1>
+    <input type="text" placeholder="Type sentence here" ng-model="sentence">
+    <button ng-click="translate()">Translate</button>
+
+    <div>
+        {{yoda}}
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="service.js"></script>
+</body>
+
+</html>

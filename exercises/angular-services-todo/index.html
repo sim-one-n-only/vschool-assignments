@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularTodo">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Angular Todo</title>
+</head>
+
+<body ng-controller="mainCntrl">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="inputs col-md-6 col-md-offset-2">
+                <h2>To Do List:</h2>
+                <input id="typeText" type="text" placeholder="Title" ng-model="item.title">
+                <input id="typeText" type="text" placeholder="Description" ng-model="item.description">
+                <input id="typeText" type="url" placeholder="Image URL" ng-model="item.imgUrl">
+                <input id="typeText" type="text" placeholder="Item price" ng-model="item.price">
+                <div class="row">
+                    <div>
+                        <button ng-click="add(item)">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div ng-show="editing">
+            <h4>edit your item!!</h4>
+        </div>
+-->
+        <div class="row">
+            <div class="form col-md-6 col-md-offset-3" ng-repeat="item in todoList">
+                <div class="col-md-4 completedTask">
+                    <input id="checkbox" type="checkbox" ng-model="checked"> COMPLETED
+                </div>
+                <h3 ng-class="{'strike':checked}">{{item.title}}</h3>
+                <h6>{{item.description}}</h6>
+                <img ng-src="{{item.imgUrl}}">
+                <p>${{item.price}}</p>
+                <button id="deleteBtn" ng-click="delete(item._id, $index)">REMOVE</button>
+                <!--                <button ng-click="edit(item);  editing = !editing">Edit</button>-->
+            </div>
+        </div>
+        <!--            <button ng-click="editing = !editing">Edit</button>-->
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="app.js"></script>
+        <script src="service.js"></script>
+    </div>
+</body>
+
+</html>
