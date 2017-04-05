@@ -77,4 +77,14 @@ var backpack: {
     functional: "n/a"
 };
 
-var
+var camera: {
+    color: "black",
+    number: 1,
+    functional: true
+}
+
+var microphone: {
+    color: "silver",
+    number: 1,
+    funcational: true,
+}

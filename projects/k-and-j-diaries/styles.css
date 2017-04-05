@@ -26,9 +26,32 @@
     margin-left: 1600px;
 }
 
-.slideshowBanner {
-    height: 500px;
-    background-color: red;
-    border: 10px solid black;
+.active {
+    height: 400px;
     width: 100%;
+}
+
+.form-control2 {
+    position: static;
+    margin-left: 800px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.email {
+    background: radial-gradient(ellipse at center, rgba(252, 202, 178, 0.56) 0%, rgba(255, 177, 140, 0.2) 100%) !important;
+    height: 70px;
+}
+
+p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.follow {
+    height: 50px;
+    border: 1px solid rgb(224, 224, 224);
 }

@@ -8,11 +8,12 @@ $(".button").click(function () {
         console.log(response);
         $("#todos").text(newTodo);
     })
-
-
 })
 
-
+$.get("http://api.vschool.io/simone/todo/", function (response) {
+    console.log(response);
+    $("#todos").push(response);
+})
 
 //Delete (Destroy)
 
