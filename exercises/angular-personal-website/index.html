@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="urbanDictionary">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="be-aggressive/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Urban Dictionary</title>
+</head>
+
+<body>
+
+    <nav class="navbar-collapse">
+        <a id="none" class="navbar-brand">Urban Dictionary<span class="glyphicon glyphicon-book"></span></a>
+
+        <a class="navbar-btn" href="/#/home">Home</a>
+        <a class="navbar-btn" href="/#/define">Define</a>
+        <a class="navbar-btn" href="/#/sentence">Usage</a>
+    </nav>
+    <div>
+
+        <ng-view></ng-view>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="/define/define.js"></script>
+    <script src="/home/home.js"></script>
+    <script src="/sentence/sentence.js"></script>
+    <script src="service.js"></script>
+</body>
+
+</html>

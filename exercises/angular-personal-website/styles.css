@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Be Aggressive';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Be Aggressive'), url('beaggressive.woff') format('woff');
+}
+
+body {
+    background-image: url(alice-pasqual-207172.jpg);
+    background-size: cover;
+    font-family: "Be Aggressive"
+}
+
+button {
+    background: #666;
+    border: 2px solid;
+    border-color: #999 #777 #777 #999;
+    width: 150px;
+    font-size: 30px;
+    color: black;
+/*
+    display: static;
+    position: absolute;
+*/
+}
+
+
+/*rounded corners*/
+
+#inputBox {
+    background-color: rgba(63, 191, 191, 0.6);
+    height: 200px;
+    border: 10px outset white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-top: 15%;
+    align-items: center;
+}
+
+#word {
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 350px;
+/*
+    display: static;
+    position: absolute;
+*/
+}
+
+.navbar-btn {
+    font-size: 40px;
+    background-color: black;
+    text-align: center;
+    padding: 2%;
+}
+
+a {
+    border: 1px solid gray;
+    font-size: 40px;
+    padding: 1%;
+    margin-right: 2%;
+}
+
+#defineBox,
+#sentenceBox {
+    background-color: rgba(63, 191, 191, 0.8);
+    border: 10px outset white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-top: 15%;
+    color: black;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+
+h4:hover {
+    background-color: orangered;
+}
+
+.navbar-brand {
+    width: 150px;
+    height: 70px;
+    font-family: Arial Black;
+    color: red;
+    background-color: white;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    height: 150px;
+    padding-top: 2%;
+    text-align: center;
+}
+
+#none {
+    border: none;
+}
+
+@media screen and (max-width: 6--px) {
+    body {
+        display: block;
+        width: 50%;
+    }
+    #word {
+        width: 30%;
+    }
+}
