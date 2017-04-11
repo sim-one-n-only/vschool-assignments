@@ -1,0 +1,82 @@
+<div ng-controller="bountiesController">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <span id="bountiesList">
+    <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="text" class="form-control" placeholder="Bounty First Name" aria-describedby="basic-addon1" ng-model="newBounty.fName">
+        </div>
+
+        <div class="input-group input-group-lg col-xs-12 col-md-12">
+            <input type="text" class="form-control" placeholder="Bounty Last Name" aria-describedby="basic-addon2" ng-model="newBounty.lName">
+        </div>
+
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Bounty Amount" ng-model="newBounty.amount">
+                <span class="input-group-addon">.00</span>
+            </div>
+            <div class="form-group">
+                <label for="sel1">SELECT TYPE:</label>
+                <select class="form-control input-lg" id="sel1" value="" ng-model="newBounty.type">
+                    <option></option>
+                    <option>Jedi</option>
+                    <option>Sith</option>
+                    <option>Diplomat</option>
+                    <option>Monarch</option>
+                    <option>Military</option>
+                    <option>Council Members</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sel1">STATUS:</label>
+                <select class="form-control input-lg" id="sel1" value="" ng-model="newBounty.status">
+                    <option></option>
+                    <option>Alive</option>
+                    <option>Captured</option>
+                    <option>Dead</option>
+                </select>
+            </div>
+            <div class="btn-lg col-xs-offset-3 col-md-offset-3">
+                <button type='button' id='enterSite' class='btn btn-block' ng-click='post(newBounty)'>POST</button>
+            </div>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-8 col-md-4">
+            <div ng-repeat="bounty in bounties">
+                <h1>Name: {{bounty.fName}} {{bounty.lName}}</h1>
+                <h3>Amount: ${{bounty.amount}}.00 GC</h3>
+                <h3>Type: {{bounty.type}}</h3>
+                <h3>Dead/Captured: {{bounty.status}}</h3>
+                <button type="button" id="delete" class="btn btn-block" ng-click="delete(bounty, $index)">DELETE</button>
+                <button type="button" id="edit" class="btn btn-block" ng-model="editButton" ng-click="editBox = !editBox">EDIT</button>
+                <div ng-show="editBox">
+                    <input type="text" class="form-control" placeholder="Bounty First Name" aria-describedby="basic-addon1" ng-model="bounty.fName">
+                    <input type="text" class="form-control" placeholder="Bounty Last Name" aria-describedby="basic-addon1" ng-model="bounty.lName">
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Bounty Amount" ng-model="bounty.amount">
+                    <select class="form-control input-lg" id="sel1" value="" ng-model="bounty.type">
+                        <option></option>
+                        <option>Jedi</option>
+                        <option>Sith</option>
+                        <option>Diplomat</option>
+                        <option>Monarch</option>
+                        <option>Military</option>
+                        <option>Council Members</option>
+                    </select>
+                    <select class="form-control input-lg" id="sel1" value="" ng-model="bounty.status">
+                        <option></option>
+                        <option>Alive</option>
+                        <option>Captured</option>
+                        <option>Dead</option>
+                    </select>
+                    <!--                    <button ng-click="save(bounty)">SAVE CHANGES</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
