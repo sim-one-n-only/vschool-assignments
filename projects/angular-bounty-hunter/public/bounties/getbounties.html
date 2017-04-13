@@ -1,8 +1,8 @@
 <div ng-controller="bountiesController">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <span id="bountiesList">
+            <div class="col-md-8 col-md-offset-2 bountiesList">
+                <span>
     <div class="input-group input-group-lg col-xs-12 col-md-12">
             <input type="text" class="form-control" placeholder="Bounty First Name" aria-describedby="basic-addon1" ng-model="newBounty.fName">
         </div>
@@ -37,7 +37,7 @@
                     <option>Dead</option>
                 </select>
             </div>
-            <div class="btn-lg col-xs-offset-3 col-md-offset-3">
+            <div class="btn-lg col-xs-8 col-xs-offset-2 col-md-offset-2">
                 <button type='button' id='enterSite' class='btn btn-block' ng-click='post(newBounty)'>POST</button>
             </div>
             </span>

@@ -5,6 +5,7 @@
 h1 {
     font-family: Lucida Console;
     font-size: 200px;
+    text-align: center;
 }
 
 img {
@@ -13,4 +14,10 @@ img {
 
 #carouselAbout {
     text-align: center;
+}
+
+#carouselLove {
+    text-align: center;
+    width: 80%;
+
 }

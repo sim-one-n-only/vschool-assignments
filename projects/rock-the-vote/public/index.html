@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rockTheVote">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <title>Rock The Vote</title>
+</head>
+<body ng-controller="mainCntrl">
+
+<h1 id="heading">ROCK THE VOTE</h1>
+
+
+<input type="text" ng-model="newVote.title">
+<input type="text" ng-model="newVote.description">
+<button type="button" ng-click="post(newVote)">POST</button>
+
+<h2 id="listHeading">Political Issues</h2>
+<div ng-repeat="vote in votes">
+<h3>{{vote.title}}</h3>
+<p>{{vote.description}}</p>
+
+<button type="button" class="btn btn-success" ng-click="upVote(vote)">Up Vote
+<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+</button>
+    <p>Up Votes: {{vote.vote.upVotes}}</p>
+<button type="button" class="btn btn-danger" ng-click="downVote(vote)">Down Vote
+<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+</button>
+    <p">Down Votes: {{vote.vote.downVotes}}</p>
+
+
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="service.js"></script>
+</body>
+</html>
