@@ -25,7 +25,7 @@ app.config(["$routeProvider", function ($routeProvider) {
 
     .when("/level-2", {
         templateUrl: "/rates/level-2/level-2.html",
-        controller: "levelTwoControlller"
+        controller: "levelTwoController"
     })
 
     .when("/level-3", {
@@ -38,10 +38,3 @@ app.config(["$routeProvider", function ($routeProvider) {
     })
 }])
 
-var middleTwo = function (str) {
-        if (str.length % 2 === 0) {
-            var newStr = str.slice((str.length / 2) - 1, (str.length / 2) + 1);
-            return newStr;
-        } else {
-            return str;
-        }

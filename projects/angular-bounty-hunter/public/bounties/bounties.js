@@ -27,10 +27,10 @@ app.controller("bountiesController", ["$scope", "bountyService", function ($scop
         bountyService.editBounty(bounty);
     }
 
-//    $scope.save = function (bounty) {
-           //        
-           //        $scope.editBox = false;
-           //    }
+    //    $scope.save = function (bounty) {
+    //        
+    //        $scope.editBox = false;
+    //    }
 }])
 
 app.directive("bounties", function () {

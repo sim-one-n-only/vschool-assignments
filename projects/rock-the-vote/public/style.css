@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    border: 3px solid red;
+    border-radius: 50em;
+    height: 100px;
+}
+
+.imageBorder {
+    border-radius: 50em;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    line-height: 0;
+    background-image: url("https://img.clipartfest.com/ced460b0778033e5c7106a4a8415862c_-usa-flag-clip-art-png-clipart-american-flag-png_1524-823.png");
+    background-size: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50em;
+    padding: 50px;
+    background-color: white;
+
+
+}
+
+
+.inputIssue {
+    border: 2px solid gainsboro;
+    border-radius: 50em;
+    height: 130px;
+    width: 80%;
+    margin-top: 5%;
+    padding-top: 2%;
+    text-align: center;
+
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.posts {
+    text-align: center;
+    border: 2px solid gainsboro;
+    margin-bottom: 5%;
+}
+
+p {
+    display: inline-block;
+}
+
+input {
+    width: auto;
+    margin: 3%;
+}
+
+button {
+    margin: 1%;
+}
+
+body {
+    background-color: honeydew;
+}
+

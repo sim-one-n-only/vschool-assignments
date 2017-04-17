@@ -19,16 +19,14 @@ voteRoute
 })
 
     .put("/:id", function (req, res) {
-        Vote.findByIdAndUpdate(req.params.id, req.body, {
-            new: true
-             }, function (err, editedVote) {
+        Vote.findByIdAndUpdate(req.params.id, req.body, {new:true}, function (err, editedVote) {
                      res.send(editedVote);
     })
 })
 
     .delete("/:id", function (req, res) {
-        Vote.findByIdAndRemove(req.params.id, req.body, function (err, deletedVoted) {
-            res.send(deletedVoted);
+        Vote.findByIdAndRemove(req.params.id, req.body, function (err, deletedVote) {
+            res.send(deletedVote);
     })
 })
 
