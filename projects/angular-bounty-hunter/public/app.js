@@ -1,16 +1,16 @@
-var app = angular.module("bountyHunter", ["ngRoute"]);
+var app = angular.module("bountyHunter", ["ngRoute", "BountyHunter.Auth"]);
 
 app.config(["$routeProvider", function ($routeProvider) {
 
     $routeProvider
         .when("/home", {
-            templateUrl: "home/home.html",
+            templateUrl: "components/home/home.html",
             controller: "homeController",
 
         })
 
     .when("/bounties", {
-            templateUrl: "bounties/getbounties.html",
+            templateUrl: "components/bounties/getbounties.html",
             controller: "bountiesController"
         })
         .when("/rates", {

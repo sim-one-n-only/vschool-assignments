@@ -1,65 +1,39 @@
 var express = require('express');
 var bodyParser = require("body-parser");
-var uuid = require("uuid/v4");
+
 var app = express();
 var path = require("path");
+var morgan = require("morgan");
+var mongoose = require("mongoose");
+var config = require("./config");
+var expressJwt = require("express-jwt");
 
-var port = 3500;
+var port = process.env.PORT || 3500;
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
-
-var bounties = [
-    {
-        fName: "Simone",
-        lName: "Nathaniel",
-        amount: 9000,
-        type: "Jedi",
-        living: true,
-        }
-];
-
-app.get('/bounty', function (req, res) {
-    res.send(bounties);
-    console.log(req.query);
-})
-
-app.post('/bounty', function (req, res) {
-    var newBounty = req.body;
-    console.log(req.body);
-    newBounty._id = uuid();
+app.use(morgan("dev"));
+app.use("/api", expressJwt({secret: config.secret}));
+app.use("/api/bounty", require("./routes/bountyRoutes"));
 
 
-    bounties.push(newBounty);
-    res.send(newBounty);
-    console.log(newBounty._id);
-})
+mongoose.connect(config.database, function (err) {
+    if (err) throw err;
+    console.log("Successfully connected to the database.");
+});
 
-app.put('/bounty/:id', function (req, res) {
-    var newBounty = req.body;
-    for (var i = 0; i < bounties.length; i++) {
-        if (req.params.id === bounties[i]._id) {
-            for (var key in bounties[i]) {
-                bounties[i][key] = newBounty[key] || bounties[i][key];
-            }
-            return res.send(bounties[i]);
-        }
-    }
-})
+// var bounties = [
+//     {
+//         fName: "Simone",
+//         lName: "Nathaniel",
+//         amount: 9000,
+//         type: "Jedi",
+//         living: true,
+//         }
+// ];
 
-app.delete('/bounty/:id', function (req, res) {
-    for (var i = 0; i < bounties.length; i++) {
-        if (req.params.id === bounties[i]._id) {
-            bounties.splice(i, 1);
-            return res.send({
-                status: "success",
-                message: "you successfully deleted",
-                bounties: bounties
-            });
-        }
-    }
-    res.status(404).send("not found");
-})
+app.use("/auth", require("./routes/authRoutes"));
+
 
 
 

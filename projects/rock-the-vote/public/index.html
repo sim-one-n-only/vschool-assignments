@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="rockTheVote">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Rock The Vote</title>
 </head>
+
 <body ng-controller="mainCntrl">
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 imageBorder">
-            <!--<h1 id="heading">ROCK THE VOTE</h1>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 imageBorder">
+                <!--<h1 id="heading">ROCK THE VOTE</h1>-->
 
                 <img src="http://www.rockthevote.com/assets/images/logos/rock-the-vote-horizontal-logo.png">
 
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-8 col-xs-offset-1 inputIssue">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-1 inputIssue">
 
-            <span><input type="text" ng-model="newVote.title" placeholder="Title"> </span>
-            <span><input type="text" ng-model="newVote.description" placeholder="Description"></span>
-            <button type="button" ng-click="post(newVote)">POST</button>
+                <span><input type="text" ng-model="newVote.title" placeholder="Title"> </span>
+                <span><input type="text" ng-model="newVote.description" placeholder="Description"></span>
+                <button type="button" ng-click="post(newVote)">POST</button>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <h2 id="listHeading">Political Issues</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 id="listHeading">Political Issues</h2>
+            </div>
         </div>
-    </div>
-    <div class="row">
+        <div class="row">
             <div ng-repeat="vote in votes" class="col-xs-12 posts">
                 <button ng-click="deletePost(votes, $index)">X</button>
                 <h3>{{vote.title}}</h3>
@@ -52,17 +53,19 @@
                 <h4 class="comments">COMMENTS:</h4>
                 <div class="userComments" ng-repeat="comment in vote.comments track by $index">
 
-                    <button ng-click="deleteComment(vote, $index)">X</button><p>{{comment}}</p>
+                    <button ng-click="deleteComment(vote, $index)">X</button>
+                    <p>{{comment}}</p>
                 </div>
             </div>
+        </div>
     </div>
-</div>
 
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-        <script src="app.js"></script>
-        <script src="service.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="service.js"></script>
 </body>
+
 </html>

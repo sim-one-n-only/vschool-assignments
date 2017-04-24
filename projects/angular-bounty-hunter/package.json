@@ -11,7 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2",
-    "mongoose": "^4.9.4",
+    "express-jwt": "^5.3.0",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.5",
+    "morgan": "^1.8.1",
     "ng-audio": "0.0.2",
     "uuid": "^3.0.1"
   }
