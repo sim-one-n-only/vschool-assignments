@@ -3,7 +3,7 @@
  */
 var app = angular.module("BountyHunter.Auth");
 
-app.controller("LoginController", ["$scope", "$location", "UserService", function ($scope, $location, UserService) {
+app.controller("loginController", ["$scope", "$location", "UserService", function ($scope, $location, UserService) {
     $scope.login = function (user) {
         UserService.login(user).then(function (response) {
             $location.path("/bounty");

@@ -11,8 +11,8 @@ app.config(["$routeProvider", function ($routeProvider) {
         controller: "homeCntrl",
     })
 
-        .when("/aboutMe", {
-            templateUrl: "aboutMe/background.html",
+        .when("/about-me", {
+            templateUrl: "about-me/background.html",
             controller: "aboutMeCntrl",
     })
 
@@ -22,7 +22,7 @@ app.config(["$routeProvider", function ($routeProvider) {
         })
 
         .when("/contactMe", {
-            templateUrl: "contactMe/contactMe.html",
+            templateUrl: "contact-me/contact-info.html",
             controller: "contactMe"
         })
 
