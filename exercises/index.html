@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Event Calendar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://javascript.daypilot.org/demo/lite/js/daypilot-all.min.js"></script>
+</head>
+
+<body>
+    <div ng-app="main" ng-controller="CalendarController">
+        <daypilot-calendar id="calendar" daypilot-config="calendarConfig" daypilot-events="events"></daypilot-calendar>
+    </div>
+    <script>
+        var app = angular.module('main', ['daypilot']).controller('CalendarController', ['$scope', '$timeout', '$http', function ($scope, $timeout, $http) {
+            $scope.calendarConfig = {
+                viewType: "Week",
+                startDate: new DayPilot.Date()
+            };
+
+            $scope.events = [];
+    }]);
+    </script>
+</body>
+
+</html>

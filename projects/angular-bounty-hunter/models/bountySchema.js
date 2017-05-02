@@ -10,7 +10,11 @@ var bountySchema = new Schema({
     amount: Number,
     type: String,
     status: String,
-    user: {type: Schema.Types.ObjectId, ref: "User", required: true}
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+        required: true
+    }
 });
 
 module.exports = mongoose.model("Bounty", bountySchema);
